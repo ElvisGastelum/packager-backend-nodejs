@@ -1,4 +1,3 @@
-module.exports = async (request, h) => {
-  console.log(request.payload);
+module.exports = async (request, h, server) => {
   return request.payload;
 };

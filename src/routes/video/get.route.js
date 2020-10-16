@@ -12,7 +12,7 @@ module.exports = {
     server.route({
       method: METHOD.toUpperCase(),
       path: PATH,
-      handler: CONTROLLER,
+      handler: (r, h) => CONTROLLER(r, h, server),
     });
   },
 };

@@ -1,3 +1,3 @@
-module.exports = (request, h) => {
+module.exports = (request, h, server) => {
   return 'Hello World!';
 };

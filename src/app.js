@@ -1,7 +1,7 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
-const { port, host, routes } = require('./config');
+const { port, host, routes, socketIo } = require('./config');
 
 const init = async () => {
   const server = Hapi.server({
@@ -11,6 +11,15 @@ const init = async () => {
       cors: true,
     },
   });
+
+  const io = require('socket.io')(server.listener, {
+    serveClient: false,
+    log: true,
+  });
+
+  server.decorate('server', 'io', io);
+
+  await server.register(socketIo);
 
   await server.register(routes);
 
