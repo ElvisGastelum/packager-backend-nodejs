@@ -1,0 +1,29 @@
+{
+  "name": "packager-backend-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElvisGastelum/packager-backend-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElvisGastelum/packager-backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/ElvisGastelum/packager-backend-nodejs#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.1",
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
