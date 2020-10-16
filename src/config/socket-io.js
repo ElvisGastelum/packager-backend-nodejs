@@ -14,7 +14,7 @@ module.exports = {
     io.on('connect', function (socket) {
       console.log('client incoming: ', socket.id);
       socket.on('upload-video', (data) => {
-        fs.writeFile('video-uploads/upload.webm', data.videoBlob, function (err) {
+        fs.writeFile(`video-uploads/${data.videoName}.webm`, data.videoBlob, function (err) {
           if (err) {
             console.log('error: ', err);
           }
