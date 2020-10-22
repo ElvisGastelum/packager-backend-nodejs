@@ -12,13 +12,6 @@ const init = async () => {
     },
   });
 
-  const io = require('socket.io')(server.listener, {
-    serveClient: false,
-    log: true,
-  });
-
-  server.decorate('server', 'io', io);
-
   await server.register(socketIo);
 
   await server.register(routes);
