@@ -19,10 +19,16 @@
   },
   "homepage": "https://github.com/ElvisGastelum/packager-backend-nodejs#readme",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@hapi/hapi": "^20.0.1",
     "dotenv": "^8.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fluent-ffmpeg-multistream": "^1.0.0",
     "glob": "^7.1.6",
-    "socket.io": "^2.3.0"
+    "hapi-cors": "^1.0.3",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.1",
+    "wrtc": "^0.4.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.5"

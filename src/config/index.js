@@ -6,5 +6,6 @@ const routes = require('./routes').getRoutes();
 const socketIo = require('./socket-io');
 const defaultConf = require('./default');
 const envConfig = require(envConfigPath);
+const webRtc = require('./web-rtc');
 
-module.exports = { ...defaultConf, ...envConfig, routes, socketIo };
+module.exports = { ...defaultConf, ...envConfig, routes, socketIo, webRtc };
