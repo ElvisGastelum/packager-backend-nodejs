@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  backend:
+    image: elvisgastelum/packager-backend-nodejs
+    ports:
+      - "3200:3200"
+    volumes:
+      - ./video-uploads:/usr/src/app/video-uploads

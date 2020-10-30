@@ -10,8 +10,8 @@ const ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath(ffmpegPath);
 const { StreamInput } = require('fluent-ffmpeg-multistream');
 
-const VIDEO_OUTPUT_SIZE = '320x240';
-const VIDEO_OUTPUT_FILE = './recording.mp4';
+const VIDEO_OUTPUT_SIZE = '640x480';
+const VIDEO_OUTPUT_FILE = './video-uploads/recording.mp4';
 
 let UID = 0;
 
@@ -138,4 +138,3 @@ function beforeOffer(peerConnection) {
 }
 
 module.exports = { beforeOffer };
-
